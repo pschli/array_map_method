@@ -155,6 +155,8 @@ body {
 h1 {
   font-family: "Space Grotesk", sans-serif;
   font-size: 3em;
+  padding: 0;
+  margin: 0;
 }
 
 h2 {
@@ -199,6 +201,10 @@ header {
   align-items: flex-end;
 }
 
+.my {
+  margin-block: 16px;
+}
+
 .nav-element {
   position: relative;
   margin-left: -20px;
@@ -207,7 +213,7 @@ header {
   padding-right: 48px;
   border: 2px solid var(--nav-bg);
   border-left: 0;
-  border-radius: 0 30px 30px 0;
+  border-radius: 0 100px 100px 0;
   corner-top-right-shape: bevel;
   corner-bottom-right-shape: bevel;
   background-color: var(--body-bg);
