@@ -222,6 +222,22 @@ header {
     color 160ms ease-in-out;
 }
 
+.nav-element-rev {
+  position: relative;
+  margin-left: -20px;
+  padding-block: 8px;
+  padding-left: 48px;
+  padding-right: 48px;
+  border: 2px solid var(--nav-bg);
+  border-radius: 100px 0 0 100px;
+  corner-top-left-shape: bevel;
+  corner-bottom-left-shape: bevel;
+  background-color: var(--body-bg);
+  transition:
+    background-color 160ms ease-in-out,
+    color 160ms ease-in-out;
+}
+
 .nav-element[active~="true"] {
   background-color: var(--nav-bg);
   border: 2px solid var(--nav-bg-hover);
@@ -233,7 +249,8 @@ header {
   border-left: 2px solid var(--nav-bg-hover);
 }
 
-.nav-element:hover {
+.nav-element:hover,
+.nav-element-rev:hover {
   cursor: pointer;
   background-color: var(--nav-bg-hover);
   border-color: var(--nav-bg-hover);

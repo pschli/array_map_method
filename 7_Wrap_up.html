@@ -67,7 +67,91 @@
       </a>
     </header>
     <section class="content" id="section1">
-      <h1 id="title">Wrap up</h1>
+      <h1 id="title" class="my">The Takeaway</h1>
+      <h2 style="margin-top: 16px">When to use the .map() method</h2>
+      <ul>
+        <li>If you <u>don't</u> intend to modify your existing array</li>
+        <li>
+          To get a <u>new array</u> from an existing array with the same length
+        </li>
+        <li>To perform an operation on <u>every</u> element</li>
+      </ul>
+      <h2 style="margin-top: 16px">How to use the .map() method</h2>
+      <ul>
+        <li>
+          As the first parameter, each <u>element</u> gives you the option to
+          derive a new value from it
+        </li>
+        <li>
+          As the second parameter, you can use the <u>index</u> of each element
+        </li>
+        <li>
+          As the third parameter you can access the <u>calling array</u> itself
+          which is very helpful if you are chaining array methods
+        </li>
+        <li>
+          Either use an arrow function or a separately defined named function as
+          a callback function parameter of the .map() method.
+        </li>
+      </ul>
+      <div style="display: flex; align-items: center; margin-top: 48px">
+        <svg
+          version="1.1"
+          id="Capa_1"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 0 50 50"
+          xml:space="preserve"
+          style="height: 32px"
+        >
+          <circle style="fill: #d75a4a" cx="25" cy="25" r="25" />
+          <polyline
+            style="
+              fill: none;
+              stroke: #ffffff;
+              stroke-width: 2;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+            "
+            points="16,34 25,25 34,16 
+	"
+          />
+          <polyline
+            style="
+              fill: none;
+              stroke: #ffffff;
+              stroke-width: 2;
+              stroke-linecap: round;
+              stroke-miterlimit: 10;
+            "
+            points="16,16 25,25 34,34 
+	"
+          />
+        </svg>
+        <h2 style="margin-left: 16px">
+          Don't use the .map() method for side effects
+        </h2>
+      </div>
+      <h2 style="margin-top: 48px">How it looks</h2>
+      <div class="output" id="output_example_7">
+        <p class="output-text">
+          let newArray = originalArray((element, index, callingArray) => {<br />&nbsp;&nbsp;&nbsp;&nbsp;do
+          something and return the result<br />})
+        </p>
+      </div>
+
+      <h2 style="margin-top: 48px">Find this lesson on Github</h2>
+      <div class="card" style="flex-direction: row">
+        <a
+          class="source"
+          style="font-size: 1.6em; font-weight: 600"
+          href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map"
+          >https://github.com/pschli/array_map_method</a
+        >
+      </div>
     </section>
+    <div class="content">
+      <a href="8_exercises.html" class="continue">more</a>
+    </div>
   </body>
 </html>
